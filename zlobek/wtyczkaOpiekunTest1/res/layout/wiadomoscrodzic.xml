@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?><RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/ekranMenuObraz"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@+string/ekranlogon"
+        android:src="@drawable/tlo" >
+    </ImageView>
+
+    <ImageButton
+        android:id="@+id/przyciskWylogujWiadR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="38dp"
+        android:clickable="true"
+        android:contentDescription="@+string/ustawieniabtn"
+        android:src="@drawable/selektorwyloguj" />
+
+    <ImageButton
+        android:id="@+id/przyciskWsteczWiadR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/przyciskWylogujWiadR"
+        android:layout_below="@+id/przyciskWylogujWiadR"
+        android:clickable="true"
+        android:contentDescription="@+string/ustawieniabtn"
+        android:src="@drawable/selektorwstecz" />
+
+    <TextView
+        android:id="@+id/textView1WiadR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/przyciskWsteczWiadR"
+        android:layout_marginLeft="20dp"
+        android:text="@string/wiadomoscrodzic" />
+
+    <TextView
+        android:id="@+id/zalogowanyUserWiadR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/przyciskWsteczWiadR"
+        android:layout_alignLeft="@+id/textView1WiadR"
+        android:text="@string/zalogowanojako" />
+
+</RelativeLayout>

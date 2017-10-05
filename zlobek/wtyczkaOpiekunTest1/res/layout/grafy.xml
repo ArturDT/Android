@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?><RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/ekranMenuObraz"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@+string/ekranlogon"
+        android:src="@drawable/tlo" >
+    </ImageView>
+
+    <ImageButton
+        android:id="@+id/przyciskWylogujGrafy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="38dp"
+        android:clickable="true"
+        android:contentDescription="@+string/ustawieniabtn"
+        android:src="@drawable/selektorwyloguj" />
+
+    <ImageButton
+        android:id="@+id/przyciskWsteczGrafy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/przyciskWylogujGrafy"
+        android:layout_below="@+id/przyciskWylogujGrafy"
+        android:clickable="true"
+        android:contentDescription="@+string/ustawieniabtn"
+        android:src="@drawable/selektorwstecz" />
+
+    <TextView
+        android:id="@+id/textView1Grafy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/zalogowanyUserGrafy"
+        android:layout_below="@+id/zalogowanyUserGrafy"
+        android:text="@string/grafy" />
+
+    <TextView
+        android:id="@+id/zalogowanyUserGrafy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/przyciskWsteczGrafy"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="32dp"
+        android:text="@string/zalogowanojako" />
+
+</RelativeLayout>

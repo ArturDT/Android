@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/ekranMenuObraz"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@+string/ekranlogon"
+        android:src="@drawable/tlo" >
+    </ImageView>
+
+    <ImageButton
+        android:id="@+id/przyciskWylogujSen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="38dp"
+        android:clickable="true"
+        android:contentDescription="@+string/ustawieniabtn"
+        android:src="@drawable/selektorwyloguj" />
+
+    <ImageButton
+        android:id="@+id/przyciskWsteczSen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/przyciskWylogujSen"
+        android:layout_below="@+id/przyciskWylogujSen"
+        android:clickable="true"
+        android:contentDescription="@+string/ustawieniabtn"
+        android:src="@drawable/selektorwstecz" />
+
+    <TextView
+        android:id="@+id/zalogowanyUserSen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView1Sen"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="36dp"
+        android:text="@string/zalogowanojako" />
+
+    <TextView
+        android:id="@+id/textView1Sen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/zalogowanyUserSen"
+        android:layout_alignTop="@+id/przyciskWsteczSen"
+        android:text="@string/sen" />
+
+</RelativeLayout>

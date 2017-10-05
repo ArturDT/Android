@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/ekranMenuObraz"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@+string/ekranlogon"
+        android:src="@drawable/tlo" >
+    </ImageView>
+
+    <ImageButton
+        android:id="@+id/przyciskWylogujPosilki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="38dp"
+        android:clickable="true"
+        android:contentDescription="@+string/ustawieniabtn"
+        android:src="@drawable/selektorwyloguj" />
+
+    <ImageButton
+        android:id="@+id/przyciskWsteczPosilki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/przyciskWylogujPosilki"
+        android:layout_below="@+id/przyciskWylogujPosilki"
+        android:clickable="true"
+        android:contentDescription="@+string/ustawieniabtn"
+        android:src="@drawable/selektorwstecz" />
+
+    <TextView
+        android:id="@+id/zalogowanyUserPosilki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/przyciskWylogujPosilki"
+        android:layout_alignLeft="@+id/textView1"
+        android:text="@string/zalogowanojako" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/przyciskWsteczPosilki"
+        android:layout_marginLeft="41dp"
+        android:text="@string/posilki" />
+
+      <ImageButton
+          android:id="@+id/przyciskButelkaPosilki"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBottom="@+id/przyciskPosilkiStalePosilki"
+          android:layout_toRightOf="@+id/przyciskPosilkiStalePosilki"
+          android:clickable="true"
+          android:contentDescription="@+string/ustawieniabtn"
+          android:src="@drawable/selektorbutelka" />
+
+       <ImageButton
+           android:id="@+id/przyciskPiersPosilki"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignTop="@+id/przyciskPosilkiStalePosilki"
+           android:layout_toRightOf="@+id/przyciskButelkaPosilki"
+           android:clickable="true"
+           android:contentDescription="@+string/ustawieniabtn"
+           android:src="@drawable/selektorpiers" />
+
+       <ImageButton
+           android:id="@+id/przyciskPosilkiStalePosilki"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_below="@+id/przyciskWsteczPosilki"
+           android:layout_marginLeft="26dp"
+           android:clickable="true"
+           android:contentDescription="@+string/ustawieniabtn"
+           android:src="@drawable/selektorposilkistale" />
+
+       <TextView
+           android:id="@+id/textViewRodzajPosilku"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignLeft="@+id/przyciskPosilkiStalePosilki"
+           android:layout_alignTop="@+id/spinner1Posilki"
+           android:layout_marginTop="14dp"
+           android:text="@string/rodzajposilku" />
+
+       <Spinner
+           android:id="@+id/spinner1Posilki"
+           android:layout_width="170dp"
+           android:layout_height="wrap_content"
+           android:layout_alignLeft="@+id/przyciskButelkaPosilki"
+           android:layout_below="@+id/przyciskButelkaPosilki" />
+
+       <EditText
+           android:id="@+id/editTextIloscPosilki"
+           android:layout_width="100dp"
+           android:layout_height="wrap_content"
+           android:layout_alignBottom="@+id/textViewIloscPosilki"
+           android:layout_toRightOf="@+id/textViewRodzajPosilku"
+           android:ems="10" 
+           android:inputType="numberDecimal" >
+
+           <requestFocus />
+       </EditText>
+
+       <TextView
+           android:id="@+id/textViewPoczatekPosilki"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignLeft="@+id/textViewIloscPosilki"
+           android:layout_below="@+id/textViewIloscPosilki"
+           android:layout_marginTop="15dp"
+           android:text="@string/poczatek" />
+
+       <EditText
+           android:id="@+id/editTextPoczatekPosilki"
+           android:layout_width="80dp"
+           android:layout_height="wrap_content"
+           android:layout_alignBaseline="@+id/textViewPoczatekPosilki"
+           android:layout_alignBottom="@+id/textViewPoczatekPosilki"
+           android:layout_toRightOf="@+id/textViewPoczatekPosilki"
+           android:ems="10"
+           android:inputType="time" />
+
+       <TextView
+           android:id="@+id/textViewKoniecPosilki"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignLeft="@+id/textViewPoczatekPosilki"
+           android:layout_below="@+id/editTextPoczatekPosilki"
+           android:layout_marginTop="15dp"
+           android:text="@string/koniec" />
+
+       <EditText
+           android:id="@+id/editTextKoniecPosilki"
+           android:layout_width="80dp"
+           android:layout_height="wrap_content"
+           android:layout_alignLeft="@+id/editTextPoczatekPosilki"
+           android:layout_below="@+id/editTextPoczatekPosilki"
+           android:ems="10"
+           android:inputType="time" />
+
+       <CheckBox
+           android:id="@+id/checkBoxOdmowaPosilki"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignRight="@+id/przyciskWylogujPosilki"
+           android:layout_below="@+id/editTextKoniecPosilki"
+           android:layout_marginTop="14dp"
+           android:text="@string/odmowa" />
+
+       <TextView
+           android:id="@+id/textViewMlPosilki"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_above="@+id/textViewPoczatekPosilki"
+           android:layout_alignRight="@+id/editTextPoczatekPosilki"
+           android:text="@string/ml" />
+
+       <TextView
+           android:id="@+id/textViewNotatkiPosilki"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignLeft="@+id/textViewKoniecPosilki"
+           android:layout_alignTop="@+id/editTextNotatkiPosilki"
+           android:text="@string/notatki" />
+
+        <TextView
+            android:id="@+id/textViewIloscPosilki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textViewRodzajPosilku"
+            android:layout_centerVertical="true"
+            android:text="@string/ilosc" />
+
+        <EditText
+            android:id="@+id/editTextNotatkiPosilki"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinnerRekaPosilki"
+            android:layout_toRightOf="@+id/przyciskOkPosilki"
+            android:ems="10"
+            android:inputType="textMultiLine" />
+
+        <Spinner
+            android:id="@+id/spinnerRekaPosilki"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextKoniecPosilki"
+            android:layout_toLeftOf="@+id/checkBoxOdmowaPosilki" />
+
+        <ImageButton
+            android:id="@+id/przyciskOkPosilki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textViewNotatkiPosilki"
+            android:layout_below="@+id/textViewNotatkiPosilki"
+            android:clickable="true"
+            android:contentDescription="@+string/ustawieniabtn"
+            android:src="@drawable/selektorok" />
+
+        <ImageButton
+            android:id="@+id/przyciskNowyPosilki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textViewRodzajPosilku"
+            android:layout_below="@+id/textViewRodzajPosilku"
+            android:clickable="true"
+            android:contentDescription="@+string/ustawieniabtn"
+            android:src="@drawable/selektornowy" />
+
+</RelativeLayout>

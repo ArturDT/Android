@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">wtyczkaOpiekunTest</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="ekranpowitalny">ekranpowitalny</string>
+    <string name="tekstLogowanie">Aby zalogować się w systemie podaj email oraz hasło:</string>
+    <string name="zalogowano">zalogowano</string>
+    <string name="niepoprawnedane">Niepoprawne dane logowania!</string>
+    <string name="blad">blad</string>
+    <string name="connect">connect</string>
+    <string name="polaczono">connected</string>
+    <string name="alertTxt">alertTxt</string>
+    <string name="zalogowanojako">"zalogowano jako: "</string>
+    <string name="usr">userTest</string>
+    <string name="test">" "</string>
+    <string name="sus">usr</string>
+    <string name="posilki">zakładka posiłki</string>
+    <string name="przewijanie">zakładka przwijanie</string>
+    <string name="sen">zakładka sen</string>
+    <string name="nastroj">zakładka nastrój</string>
+    <string name="aktywnosc">zakładka aktywność</string>
+    <string name="zdrowie">zakładka zdrowie</string>
+    <string name="wiadomoscrodzic">zakładka wiadomość do rodzica</string>
+    <string name="przelomowe">zakładka przełomowe wydarzenia</string>
+    <string name="wiecej">zakładka więcej opcji</string>
+    <string name="ustawienia">zakładka ustawienia</string>
+    <string name="wiadomosc">zakładkaa wiadomość</string>
+    <string name="wiadomosc1">zakładka wiadomość</string>
+    <string name="grafy">zakładka grafy</string>
+    <string name="wybierzGrupe">wybierz grupę:</string>
+    <string name="checkbox">box</string>
+    <string name="wolne">wolne miejsce</string>
+    <string name="selectall">Zaznacz wszystkich</string>
+    <string name="ok">OK</string>
+    <string name="grupa">"grupa: "</string>
+    <string name="deselectall">odznacz wszystkich</string>
+    <string name="rodzajposilku">rodzaj posiłku:</string>
+    <string name="ilosc">"ilość: "</string>
+    <string name="ml">ml</string>
+    <string name="poczatek">"początek karmienia: "</string>
+    <string name="koniec">koniec karmienia:</string>
+    <string name="notatki">"notatki: "</string>
+    <string name="odmowa">odmowa posiłku</string>
+    <string-array name="rece_array">
+        <item>prawa</item>
+        <item>lewa</item>
+        <item>obie</item>
+    </string-array>
+    <string-array name="rodzaj_array">
+        <item>staly</item>
+        <item>butelka</item>
+    </string-array>
+        <string name="nikogo">nikogo nie wybrano!</string>
+        <string name="nowyposilek">nowy posiłek</string>
+        <string name="typ">typ posilku:</string>
+        <string name="nazwaposilku">"nazwa posiłku: "</string>
+        <string name="opis">"opis: "</string>
+        <string name="dzieciakS">Wybierz dziecko:</string>
+    
+
+</resources>

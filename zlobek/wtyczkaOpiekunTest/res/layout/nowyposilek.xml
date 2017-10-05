@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/ekranMenuObraz"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@+string/ekranlogon"
+        android:src="@drawable/tlo" >
+    </ImageView>
+
+    <ImageButton
+        android:id="@+id/przyciskWylogujNowyPosilek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="38dp"
+        android:clickable="true"
+        android:contentDescription="@+string/ustawieniabtn"
+        android:src="@drawable/selektorwyloguj" />
+
+    <ImageButton
+        android:id="@+id/przyciskWsteczNowyPosilek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/przyciskWylogujNowyPosilek"
+        android:layout_below="@+id/przyciskWylogujNowyPosilek"
+        android:clickable="true"
+        android:contentDescription="@+string/ustawieniabtn"
+        android:src="@drawable/selektorwstecz" />
+
+    <TextView
+        android:id="@+id/zalogowanyUserNowyPosilek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/przyciskWylogujNowyPosilek"
+        android:layout_alignLeft="@+id/textView1"
+        android:text="@string/zalogowanojako" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/przyciskWsteczNowyPosilek"
+        android:layout_marginLeft="41dp"
+        android:text="@string/nowyposilek" />
+
+        <EditText
+            android:id="@+id/editTextTypNowyPosilek"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textViewTypPosilek"
+            android:layout_alignBottom="@+id/textViewTypPosilek"
+            android:layout_toRightOf="@+id/zalogowanyUserNowyPosilek"
+            android:ems="10"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTextOpisNowyPosilek"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/przyciskWsteczNowyPosilek"
+            android:layout_below="@+id/editTextNazwaNowyPosilek"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:inputType="textMultiLine" />
+
+        <EditText
+            android:id="@+id/editTextNazwaNowyPosilek"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTextTypNowyPosilek"
+            android:layout_below="@+id/editTextTypNowyPosilek"
+            android:layout_marginTop="18dp"
+            android:ems="10"
+            android:inputType="text" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/textViewNazwaNowyPosilek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editTextNazwaNowyPosilek"
+            android:layout_alignBottom="@+id/editTextNazwaNowyPosilek"
+            android:layout_alignLeft="@+id/textViewTypPosilek"
+            android:text="@string/nazwaposilku" />
+
+        <TextView
+            android:id="@+id/textViewOpisNowyPosilek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editTextOpisNowyPosilek"
+            android:layout_alignBottom="@+id/editTextOpisNowyPosilek"
+            android:layout_alignLeft="@+id/textViewNazwaNowyPosilek"
+            android:text="@string/opis" />
+
+        <ImageButton
+            android:id="@+id/przyciskOkNowyPosilek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTextOpisNowyPosilek"
+            android:layout_below="@+id/editTextOpisNowyPosilek"
+            android:layout_marginTop="26dp"
+            android:clickable="true"
+            android:contentDescription="@+string/ustawieniabtn"
+            android:src="@drawable/selektorok" />
+
+        <TextView
+            android:id="@+id/textViewTypPosilek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textViewRodzajNowegoPosilku"
+            android:layout_below="@+id/spinner1NowyPosilek"
+            android:layout_marginTop="16dp"
+            android:text="@string/typ" />
+
+        <TextView
+            android:id="@+id/textViewRodzajNowegoPosilku"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_alignTop="@+id/spinner1NowyPosilek"
+            android:text="@string/rodzajposilku" />
+
+        <Spinner
+            android:id="@+id/spinner1NowyPosilek"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/przyciskWylogujNowyPosilek"
+            android:layout_below="@+id/przyciskWsteczNowyPosilek"
+            android:layout_marginTop="26dp" />
+
+</RelativeLayout>

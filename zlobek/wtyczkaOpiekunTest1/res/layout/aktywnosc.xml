@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?><RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/ekranMenuObraz"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@+string/ekranlogon"
+        android:src="@drawable/tlo" >
+    </ImageView>
+
+    <ImageButton
+        android:id="@+id/przyciskWylogujAktywnosc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="38dp"
+        android:clickable="true"
+        android:contentDescription="@+string/ustawieniabtn"
+        android:src="@drawable/selektorwyloguj" />
+
+    <ImageButton
+        android:id="@+id/przyciskWsteczAktywnosc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/przyciskWylogujAktywnosc"
+        android:layout_below="@+id/przyciskWylogujAktywnosc"
+        android:clickable="true"
+        android:contentDescription="@+string/ustawieniabtn"
+        android:src="@drawable/selektorwstecz" />
+
+    <TextView
+        android:id="@+id/zalogowanoJakoAktywnosc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/przyciskWylogujAktywnosc"
+        android:layout_toLeftOf="@+id/zalogowanyUserAktywnosc"
+        android:text="@string/zalogowanojako" />
+
+    <TextView
+        android:id="@+id/zalogowanyUserAktywnosc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/przyciskWsteczAktywnosc"
+        android:layout_centerHorizontal="true"
+        android:text="@string/sus" />
+
+    <TextView
+        android:id="@+id/textView1Aktywnosc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/zalogowanyUserAktywnosc"
+        android:layout_alignTop="@+id/przyciskWsteczAktywnosc"
+        android:text="@string/aktywnosc" />
+
+</RelativeLayout>
